@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../constants.dart';
+import 'package:hoololi/widgets/text_display.dart';
+import 'package:hoololi/widgets/text_field.dart';
+import '../../utils/constants.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -21,76 +23,20 @@ class LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Center(
-                child: Text(
-                  'WELCOME!',
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
+                child: TextDisplay(text: 'WELCOME!', fontSize: 32, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 50),
-              const Text(
-                'NAME',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              const TextDisplay(text: 'NAME'),
               const SizedBox(height: 5),
-              TextField(
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: AppConstants.textBoxColor, // TextField background color
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
+              TextInputBox(control: AppConstants.name),
               const SizedBox(height: 20),
-              const Text(
-                'EMAIL',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              const TextDisplay(text: 'MAIL'),
               const SizedBox(height: 5),
-              TextField(
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: AppConstants.textBoxColor, // TextField background color
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
+              TextInputBox(control: AppConstants.mail),
               const SizedBox(height: 20),
-              const Text(
-                'PASSWORD',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
+              const TextDisplay(text: 'PASSWORD'),
               const SizedBox(height: 5),
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: AppConstants.textBoxColor, // TextField background color
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide.none,
-                  ),
-                ),
-              ),
+              TextInputBox(control: AppConstants.password),
               const SizedBox(height: 30),
               Center(
                 child: ElevatedButton(
@@ -105,10 +51,7 @@ class LoginScreenState extends State<LoginScreen> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  child: const Text(
-                    'LOG IN',
-                    style: TextStyle(fontSize: 16, color: Colors.white),
-                  ),
+                  child: const TextDisplay(text: 'LOG IN', fontSize: 16,),
                 ),
               ),
             ],

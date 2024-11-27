@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'login.dart';
+import 'package:hoololi/utils/constants.dart';
+import 'login_pg.dart';
 
-class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({super.key});
+class AuthScreen extends StatefulWidget {
+  const AuthScreen({super.key});
 
   @override
-  WelcomeScreenState createState() => WelcomeScreenState();
+  AuthScreenState createState() => AuthScreenState();
 }
 
-class WelcomeScreenState extends State<WelcomeScreen> {
+class AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+  return Scaffold(
       body: Stack(
         children: [
           // Background Image
@@ -33,16 +34,17 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: AppConstants.darkPinkColor,
                   ),
                 ),
                 const SizedBox(height: 10),
                 const Text(
-                  "HOʻOLOLI",
+                  "HO'OLOLI",
                   style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black,
+                    color: AppConstants.darkPinkColor,
+                    fontStyle: FontStyle.italic
                   ),
                 ),
                 const SizedBox(height: 50),
@@ -55,7 +57,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                             );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[900],
+                    backgroundColor: AppConstants.darkPinkColor,
                     padding: const EdgeInsets.symmetric(
                       vertical: 15,
                       horizontal: 50,
@@ -76,7 +78,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                     // Handle signup button press
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue[900],
+                    backgroundColor: AppConstants.darkPinkColor,
                     padding: const EdgeInsets.symmetric(
                       vertical: 15,
                       horizontal: 50,

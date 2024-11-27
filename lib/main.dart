@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/auth_pages/home.dart';
+import 'screens/auth_pages/logo_pg.dart';
 
 void main() {
   runApp(const MyApp());

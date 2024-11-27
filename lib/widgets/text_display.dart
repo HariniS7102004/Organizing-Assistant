@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../utils/constants.dart';
 
 class TextDisplay extends StatelessWidget {
   final String text;          
@@ -11,7 +12,7 @@ class TextDisplay extends StatelessWidget {
     required this.text,
     this.fontSize = 14,         
     this.fontWeight = FontWeight.w500,
-    this.color = Colors.white, 
+    this.color = AppConstants.darkPinkColor, 
   });
 
   @override

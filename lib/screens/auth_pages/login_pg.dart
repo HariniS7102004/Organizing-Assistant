@@ -15,7 +15,7 @@ class LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: AppConstants.bgColor, // Background color
+        color: AppConstants.lightPinkColor, // Background color
         padding: const EdgeInsets.symmetric(horizontal: 40.0),
         child: Center(
           child: Column(
@@ -44,16 +44,24 @@ class LoginScreenState extends State<LoginScreen> {
                     // Handle login button press
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppConstants.textBoxColor, // Button color
+                    backgroundColor: AppConstants.darkPinkColor, // Button color
                     padding: const EdgeInsets.symmetric(
                         horizontal: 50, vertical: 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  child: const TextDisplay(text: 'LOG IN', fontSize: 16,),
+                  child: const TextDisplay(text: 'LOG IN', fontSize: 16, color: Colors.white),
                 ),
               ),
+              const SizedBox(height: 5),
+              // const Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   crossAxisAlignment: CrossAxisAlignment.start,
+              //   children: [
+              //     TextDisplay(text: "Don't have an account?", fontSize: 10, color: Colors.black),
+              //   ]
+              // )
             ],
           ),
         ),

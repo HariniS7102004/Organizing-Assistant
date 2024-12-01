@@ -62,6 +62,7 @@ flutter:
   assets:
     - lib/images/logo_img.jpg
     - lib/images/bg_img.jpg
+    - lib/images/home_img.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

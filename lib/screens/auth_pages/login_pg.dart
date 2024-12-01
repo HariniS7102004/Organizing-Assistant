@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hoololi/widgets/text_display.dart';
 import 'package:hoololi/widgets/text_field.dart';
 import '../../utils/constants.dart';
+import '../home_pg.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -41,7 +42,10 @@ class LoginScreenState extends State<LoginScreen> {
               Center(
                 child: ElevatedButton(
                   onPressed: () {
-                    // Handle login button press
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HomeScreen()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppConstants.darkPinkColor, // Button color

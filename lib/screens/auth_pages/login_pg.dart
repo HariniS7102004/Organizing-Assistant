@@ -19,10 +19,12 @@ class LoginScreenState extends State<LoginScreen> {
         color: AppConstants.lightPinkColor, // Background color
         padding: const EdgeInsets.symmetric(horizontal: 40.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
               const Center(
                 child: TextDisplay(text: 'WELCOME!', fontSize: 32, fontWeight: FontWeight.bold),
               ),
@@ -67,6 +69,7 @@ class LoginScreenState extends State<LoginScreen> {
               //   ]
               // )
             ],
+          ),
           ),
         ),
       ),

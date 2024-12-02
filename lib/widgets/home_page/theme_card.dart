@@ -8,21 +8,23 @@ class ThemeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String name = theme['name']!;
+    String imagePath = theme['image']!;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(8.0),
-          child: Image.network(
-            theme['image']!,
+          child: Image.asset(
+            imagePath,
             height: 80,
-            width: 80,
+            width: 100,
             fit: BoxFit.cover,
           ),
         ),
         const SizedBox(height: 4.0),
         Text(
-          theme['name']!,
+          name,
           style: const TextStyle(color: Colors.black),
         ),
       ],

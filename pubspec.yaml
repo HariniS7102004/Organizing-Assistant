@@ -63,6 +63,26 @@ flutter:
     - lib/images/logo_img.jpg
     - lib/images/bg_img.jpg
     - lib/images/home_img.jpg
+    - lib/images/main_pg_hall_img_1.jpg
+    - lib/images/main_pg_hall_img_2.jpg
+    - lib/images/main_pg_hall_img_3.jpg
+    - lib/images/main_pg_hall_img_4.jpg
+    - lib/images/designs/boho.jpg
+    - lib/images/designs/vintage.jpg
+    - lib/images/designs/modern.jpg
+    - lib/images/designs/rustic.jpg
+    - lib/images/designs/classic.jpg
+    - lib/images/designs/minimalist.jpg
+    - lib/images/designs/nautical.jpg
+    - lib/images/designs/scandinavian.jpg
+    - lib/images/products/chair.jpg
+    - lib/images/products/lamp.jpg
+    - lib/images/products/vase.jpg
+    - lib/images/products/antiques.jpg
+    - lib/images/products/chandelier.jpg
+    - lib/images/products/dineware.jpg
+    - lib/images/products/frames.jpg
+    - lib/images/products/wall_hangings.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

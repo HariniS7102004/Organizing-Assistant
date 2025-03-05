@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hoololi/screens/img_upload.dart';
 import 'package:hoololi/utils/constants.dart';
 import '../widgets/home_page/section_header.dart';
 import '../widgets/home_page/themes_grid.dart';
@@ -55,7 +56,7 @@ class HomeScreenState extends State<HomeScreen> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => InputLayout()),
+                            MaterialPageRoute(builder: (context) => RoomTransformerApp()),
                           );
                         },
                         style: ElevatedButton.styleFrom(
@@ -64,7 +65,7 @@ class HomeScreenState extends State<HomeScreen> {
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                         ),
-                        child: const Text('CREATE NEW', style: TextStyle(color: Colors.white),),
+                        child: const Text('GENERATE DESIGN', style: TextStyle(color: Colors.white),),
                       ),
                       const SizedBox(width: 5),
                       ElevatedButton(

@@ -494,6 +494,6 @@ if __name__ == "__main__":
     theme = input("Enter the theme you want (modern, vintage, rustic, etc.): ")
 
     # Optional: HuggingFace auth token for accessing gated models
-    hf_token = ""  # Your HuggingFace auth token here
+   
 
     main(input_image, theme, hf_token)
